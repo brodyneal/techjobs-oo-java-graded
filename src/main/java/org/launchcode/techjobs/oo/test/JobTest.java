@@ -23,9 +23,9 @@ public class JobTest {
         Job testJob = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         assertEquals("Product tester", testJob.getName());
         assertEquals("ACME", testJob.getEmployer().toString());
-        assertEquals("Desert", testJobForConstructor.getLocation().toString());
-        assertEquals("Quality control", testJobForConstructor.getPositionType().toString());
-        assertEquals("Persistence", testJobForConstructor.getCoreCompetency().toString());
+        assertEquals("Desert", testJob.getLocation().toString());
+        assertEquals("Quality control", testJob.getPositionType().toString());
+        assertEquals("Persistence", testJob.getCoreCompetency().toString());
         assertTrue(testJob.getName() instanceof String);
         assertTrue(testJob.getEmployer() instanceof Employer);
         assertTrue(testJob.getLocation() instanceof Location);
