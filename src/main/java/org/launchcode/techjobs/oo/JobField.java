@@ -20,6 +20,15 @@ public class JobField {
 
     // Custom toString, equals, and hashCode methods:
 
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        JobField jobField = (JobField) o;
+        return id == jobField.id;
+    }
+
     @Override
     public String toString() {
         return value;
